@@ -10,7 +10,9 @@ class App extends Component {
       value: '',
       name: '', 
       lastname:'',
-      formOne:["name","lastname"]
+      birthday:'',
+      formOne:["name","lastname","formtwo"],
+      formtwo:["birthday", "sthelse", "finish"]
     };
   }
 
@@ -37,10 +39,22 @@ class App extends Component {
         inputForm= {this.state.formOne}
         value = {this.state.name}
         change ={this.handleChange.bind(this)}
+        changeMode={this.handelMode.bind(this)}
         />
          </div>
       );
-    } else {
+    } else if(this.state.mode === 'formtwo'){
+      return(
+        <div>
+           <Form
+        inputForm= {this.state.formtwo}
+        value = {this.state.name}
+        change ={this.handleChange.bind(this)}
+        changeMode={this.handelMode.bind(this)}
+        />
+        </div>)
+
+    }else {
       return (
         <div >
         this is intro
