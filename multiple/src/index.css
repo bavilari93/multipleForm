@@ -2,4 +2,46 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color:#FF8361;
+
+}
+
+.App{
+	display: flex;
+	align-items: center; 
+	justify-content: center; 
+}
+
+.form{
+	margin-top: 50%;
+	align-items: center; 
+	justify-content: center; 
+	display: flex;
+	flex-direction: column;
+	
+}
+
+h1{
+	margin-top: 2rem;
+	text-transform: uppercase;
+	color: white;
+}
+
+.form input{
+	height: 2rem;
+	width: 10rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.form .button{
+	margin-top: 10%;
+	background-color: #FFB861;
+	width: 5rem;
+	height: 2rem;
+	font-weight:100;
+	font-size: .8rem;
+	text-transform: uppercase;
+	color: white;
+
 }

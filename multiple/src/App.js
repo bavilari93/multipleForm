@@ -35,6 +35,7 @@ class App extends Component {
     if(this.state.mode === 'view') {
       return (
         <div>
+        <h1> Name</h1>
         <Form
         inputForm= {this.state.formOne}
         value = {this.state.name}
@@ -46,9 +47,10 @@ class App extends Component {
     } else if(this.state.mode === 'formtwo'){
       return(
         <div>
+        <h1>Birthday</h1>
            <Form
         inputForm= {this.state.formtwo}
-        value = {this.state.name}
+        value = {this.state.birthday}
         change ={this.handleChange.bind(this)}
         changeMode={this.handelMode.bind(this)}
         />
@@ -57,7 +59,9 @@ class App extends Component {
     }else {
       return (
         <div >
-        this is intro
+        <h1>{this.state.name} </h1>
+        <h1>{this.state.lastname} </h1>
+        <h2>{this.state.birthday}</h2>
          </div>
           
       );

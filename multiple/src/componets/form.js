@@ -4,7 +4,7 @@ class Form extends Component{
 
 	render(){
 		return(
-			<div> 
+			<div className="form"> 
 				<input 
 				type="text"
 				name={this.props.inputForm[0]}
@@ -12,7 +12,9 @@ class Form extends Component{
 				value={this.props.value}
 				onChange={e=>{this.props.change(e)}}
 				/>
-				<div onClick={()=>{this.props.changeMode(this.props.inputForm[2])}}>next</div>
+
+				<div className="button" onClick={()=>{this.props.changeMode(this.props.inputForm[2])}}>
+				<p>next</p></div>
 			</div>
 			)
 	}
